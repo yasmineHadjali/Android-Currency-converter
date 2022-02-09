@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android ="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="95dp"
+    tools:layout_editor_absoluteY="259dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="63dp"
+        android:gravity="center"
+        android:text="Convertisseur "
+        android:textColor="@color/blue"
+        android:textSize="20dp"
+
+
+
+        />
+
+    <RelativeLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        >
+
+
+        <EditText
+            android:id="@+id/dinars"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+
+
+            android:layout_toRightOf="@+id/dinarslabel"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/dinarslabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dinars"
+            android:text="Dinars : " />
+
+        <EditText
+            android:id="@+id/euro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dinars"
+            android:layout_alignLeft="@+id/dinars"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/dinarslabel"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/surnameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/euro"
+            android:text="Euro :" />
+
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="25dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+
+        >
+
+        <Button
+            android:id="@+id/convertir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Convertir"
+            android:background="@color/gray"
+            android:textColor="@color/black"
+
+            />
+
+        <Button
+            android:id="@+id/raz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:background="@color/gray"
+            android:textColor="@color/black"
+            android:text="RAZ" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+
+
+
